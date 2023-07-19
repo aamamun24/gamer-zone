@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 body{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     max-width: 1920px;
     margin: auto;
 }
@@ -207,7 +207,7 @@ body{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 .game-name{
-    margin: 0 120px 60px;
+    margin: 0 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,8 +235,71 @@ body{
 .game-box-name{
     padding-right: 10px;
 }
-
-
+/* footer styles */
+footer{
+    background: #0B0223;
+    padding: 120px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer-logo-title{
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.footer-link ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px;
+}
+.footer-link li{
+    list-style: none;
+}
+.footer-link a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.social-media li{
+    list-style: none;
+}
+.social-media a{
+    font-size: 3rem;
+    color: #FFF;
+    text-decoration: none;
+}
+.terms{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 60px;
+}
+.terms li{
+    list-style: none;
+}
+.terms a {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.copy{color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 40px;
+}
 /* Responsive styles */
 /* Mobile device */
 @media screen and (max-width: 576px) {
@@ -295,7 +358,6 @@ body{
         bottom: 100px;
     }
 }
-
 
 /* Medium Devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
