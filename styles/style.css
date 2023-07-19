@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 body{
-    /* border: 3px solid red; */
     max-width: 1920px;
     margin: auto;
 }
@@ -255,8 +254,9 @@ footer{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
+    justify-items: center;
     gap: 50px;
-    margin: 50px;
+    margin: 50px 0;
 }
 .footer-link li{
     list-style: none;
@@ -284,7 +284,8 @@ footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    gap: 50px;
+    justify-items: center;
+    gap: 40px;
     margin-top: 60px;
 }
 .terms li{
@@ -413,5 +414,9 @@ footer{
     }
     footer{
         padding: 50px;
+    }
+    .footer-link ul,
+    .terms{
+        gap: 20px;
     }
 }
