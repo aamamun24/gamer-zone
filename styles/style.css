@@ -202,7 +202,37 @@ body{
     bottom: 200px;
     border-radius: 8px;
 }
-
+/* Game name styles */
+.game-name-container{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.game-name{
+    margin: 0 120px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.game-box{
+    border-radius: 50px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    color: #0B0223;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.game-box:hover{
+    color: #FF42A5;
+    border: 1px solid #FF42A5;
+    cursor: pointer;
+}
+.game-box-img{
+    padding: 10px;
+}
+.game-box-name{
+    padding-right: 10px;
+}
 
 
 /* Responsive styles */
