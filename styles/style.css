@@ -165,7 +165,43 @@ body{
     margin-top: 24px;
     line-height: 30px;
 }
-
+/* Play instantly styles */
+.play-instantly-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 120px 0;
+    gap: 30px;
+}
+.play-instantly-content{
+    text-align: right;
+    width: 50%;
+}
+.play-instantly-title{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 40px;
+}
+.play-instantly-description{
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 16px;
+}
+.play-instantly-img{
+    width: 50%;
+}
+.play-instantly-img-top{
+    width: 90%;
+    height: auto;
+    margin-left: 100px;
+}
+.play-instantly-img-bottom{
+    width: 250px;
+    position: relative;
+    bottom: 200px;
+    border-radius: 8px;
+}
 
 
 
@@ -174,7 +210,8 @@ body{
 @media screen and (max-width: 576px) {
     .nav-bar,
     .menu-container ul,
-    .game-img-container
+    .game-img-container,
+    .play-instantly-container
     {
         flex-direction: column;
     }
@@ -194,7 +231,10 @@ body{
         background-size: contain;
         background-position: center;
     }
-    .banner-img{
+    .banner-img,
+    .play-instantly-content,
+    .play-instantly-img
+    {
         width: 100%;
     }
     .btn-go{
@@ -205,8 +245,21 @@ body{
         border-radius: 48px;
         font-size: 1rem;
     }
-    .online-game{
-        margin: 50px 30px;
+    .online-game,
+    .play-instantly-container
+    {
+        margin: 50px 30px 0;
+    }
+    .play-instantly-content{
+        text-align: center;
+    }
+    .play-instantly-img-top{
+        width: 70%;
+        margin-left: 50px;
+    }
+    .play-instantly-img-bottom{
+        width: 150px;
+        bottom: 100px;
     }
 }
 
@@ -230,7 +283,21 @@ body{
         border-radius: 48px;
         font-size: 1rem;
     }
-    .online-game{
+    .online-game,
+    .play-instantly-container
+    {
         margin: 50px;
+    }
+    .play-instantly-container
+    {
+        margin-bottom: 0;
+    }
+    .play-instantly-img-top{
+        width: 90%;
+        margin-left: 50px;
+    }
+    .play-instantly-img-bottom{
+        width: 150px;
+        bottom: 130px;
     }
 }
