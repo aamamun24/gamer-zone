@@ -252,7 +252,8 @@ footer{
     font-weight: 700;
 }
 .footer-link ul{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     gap: 50px;
     margin: 50px;
@@ -280,7 +281,8 @@ footer{
     text-decoration: none;
 }
 .terms{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     gap: 50px;
     margin-top: 60px;
@@ -357,6 +359,17 @@ footer{
         width: 150px;
         bottom: 100px;
     }
+    footer{
+        padding: 50px 30px;
+    }
+    .footer-link ul{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .terms{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 }
 
 /* Medium Devices */
@@ -397,5 +410,8 @@ footer{
     }
     .game-name{
         margin: 0 30px;
+    }
+    footer{
+        padding: 50px;
     }
 }
