@@ -1,0 +1,74 @@
+/* Common shared styles */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    border: 3px solid red;
+    max-width: 1920px;
+    margin: auto;
+}
+.primary-color{
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* header styles */
+.header{
+    background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.navbar{
+    margin: 0 120px;
+    padding: 35px 0;
+}
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-left: 15px;
+}
+.menu-container ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.menu-container li{
+    list-style: none;
+}
+.menu-container li a{
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.follow-menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    background-color: rgba(11, 2, 35, 0.10);
+    padding: 15px 25px;
+}
+.follow-menu p{
+    color: #3C354F;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.follow-menu li a{
+    font-size: 2rem;
+}
+.fa-youtube{
+    color: #F61C0D;
+}
