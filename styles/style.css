@@ -213,7 +213,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 60px 120px 0;
+    margin: 60px 120px;
     gap: 30px;
 }
 .play-instantly-content{
@@ -232,17 +232,19 @@ body{
     margin-top: 16px;
 }
 .play-instantly-img{
+    position: relative;
     width: 50%;
 }
 .play-instantly-img-top{
     width: 90%;
     height: auto;
+    margin-bottom: 50px;
     margin-left: 100px;
 }
 .play-instantly-img-bottom{
-    width: 250px;
-    position: relative;
-    bottom: 200px;
+    width: 40%;
+    position: absolute;
+    bottom: 10px;
     border-radius: 8px;
 }
 
@@ -394,7 +396,7 @@ footer{
     .online-game,
     .play-instantly-container
     {
-        margin: 50px 30px 0;
+        margin: 50px 30px;
     }
     .play-instantly-content{
         text-align: center;
@@ -404,8 +406,8 @@ footer{
         margin-left: 50px;
     }
     .play-instantly-img-bottom{
-        width: 150px;
-        bottom: 100px;
+        width: 30%;
+        bottom: 10px;
     }
     .game-name{
         margin: 50px 10px 0;
@@ -460,17 +462,8 @@ footer{
     {
         margin: 50px;
     }
-    .play-instantly-container
-    {
-        margin-bottom: 0;
-    }
     .play-instantly-img-top{
-        width: 90%;
         margin-left: 50px;
-    }
-    .play-instantly-img-bottom{
-        width: 150px;
-        bottom: 130px;
     }
     .game-name{
         margin: 0 30px;
