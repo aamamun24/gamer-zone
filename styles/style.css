@@ -33,6 +33,7 @@ body{
     text-transform: uppercase;
     cursor: pointer;
 }
+
 /* header styles */
 .navbar-container{
     background-color: #FFF;
@@ -88,6 +89,7 @@ body{
 .fa-youtube{
     color: #F61C0D;
 }
+
 /* Banner styles */
 .banner-container{
     display: flex;
@@ -129,12 +131,8 @@ body{
     width: 100%;
     height: auto;
 }
+
 /* Online game styles */
-.game-img-container{
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-}
 .online-game{
     margin: 60px 120px 0;
 }
@@ -152,18 +150,64 @@ body{
     margin-top: 16px;
     margin-bottom: 48px;
 }
-.game-img-box img{
-    width: 100%;
-    height: auto;
+.game-img-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
 }
-.game-img-box figcaption{
+.game-img-hover{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: border 0.3s ease; 
+}
+.game-img-hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.game-img-hover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.overlay li{
+    list-style: none;
+}
+.overlay li a{
+    color: #FFF;
+    font-size: 2rem;
+}
+.game-img-hover .overlay-text {
+    color: #FF42A5;
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.game-img-hover:hover .overlay {
+    opacity: 1;
+    border: 3px solid #FF42A5;
+    border-radius: 16px;
+}
+.game-img-box .img-caption{
     color: #534C64;
     font-size: 1rem;
     font-weight: 500;
     max-width: 342px;
-    margin-top: 24px;
-    line-height: 30px;
+    margin-top: 10px;
+    line-height: 25px;
 }
+
 /* Play instantly styles */
 .play-instantly-container{
     display: flex;
@@ -201,16 +245,17 @@ body{
     bottom: 200px;
     border-radius: 8px;
 }
+
 /* Game name styles */
 .game-name-container{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 .game-name{
-    margin: 0 120px;
+    margin: 0 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
     padding: 50px 0;
 }
@@ -221,8 +266,9 @@ body{
     align-items: center;
     color: #0B0223;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     border: 1px solid #FFF;
+    padding: 10px;
 }
 .game-box:hover{
     color: #FF42A5;
@@ -230,15 +276,17 @@ body{
     cursor: pointer;
 }
 .game-box-img{
-    padding: 10px;
+    width: 50px;
 }
 .game-box-name{
-    padding-right: 10px;
+    padding-left: 10px;
 }
+
 /* footer styles */
 footer{
     background: #0B0223;
     padding: 120px;
+    text-align: center;
 }
 .footer-logo{
     display: flex;
@@ -256,7 +304,6 @@ footer{
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     justify-items: center;
-    gap: 50px;
     margin: 50px 0;
 }
 .footer-link li{
@@ -277,7 +324,7 @@ footer{
     list-style: none;
 }
 .social-media a{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #FFF;
     text-decoration: none;
 }
@@ -285,8 +332,6 @@ footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    justify-items: center;
-    gap: 40px;
     margin-top: 60px;
 }
 .terms li{
@@ -298,13 +343,15 @@ footer{
     font-weight: 500;
     text-decoration: none;
 }
-.copy{color: rgba(255, 255, 255, 0.60);
-    text-align: center;
+.copy{
+    color: rgba(255, 255, 255, 0.60);
     font-size: 1rem;
     font-weight: 500;
     margin-top: 40px;
 }
+
 /* Responsive styles */
+
 /* Mobile device */
 @media screen and (max-width: 576px) {
     .nav-bar,
@@ -345,8 +392,7 @@ footer{
         font-size: 1rem;
     }
     .online-game,
-    .play-instantly-container,
-    .game-name
+    .play-instantly-container
     {
         margin: 50px 30px 0;
     }
@@ -360,6 +406,22 @@ footer{
     .play-instantly-img-bottom{
         width: 150px;
         bottom: 100px;
+    }
+    .game-name{
+        margin: 50px 10px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+    .game-box{
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+    .game-box-img{
+        width: 25px;
+    }
+    .game-box-name{
+        padding-left: 5px;
     }
     footer{
         padding: 50px 30px;
